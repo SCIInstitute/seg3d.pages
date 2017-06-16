@@ -60,11 +60,11 @@ linux. GNU Make and Ninja build systems can be used. **Compiler must support C++
 
 #### Seg3D 2.4 And Newer
 
-Before building Seg3D, please make sure that **Qt 5.5** has been installed on your system.
+Before building Seg3D, please make sure that **Qt 5.9** has been installed on your system.
 
 ##### Windows
 
-A typical Qt 5.5 build is as follows:
+A typical Qt 5.9 build is as follows:
 
 + Qt will need to be built from the command line using [Visual C++ command line tools](https://msdn.microsoft.com/en-us/library/f35ctcxw(v=vs.120).aspx). Troubleshooting tips can be found [here](http://stackoverflow.com/questions/21476588/where-is-developer-command-prompt-for-vs2013).
 + Refer to the [Qt docs](http://doc.qt.io/qt-5/windows-requirements.html#building-from-source) for requirements for building from source.
@@ -131,6 +131,8 @@ CMake is a platform independent configuring system that is used for generating M
 Visual Studio project files, or Xcode project files.
 
 Once CMake has been installed, run CMake from your build (***bin***) directory and give a path to the CMake ***Superbuild*** directory containing the master CMakeLists.txt file.
+
+You may build Seg3D with [Ninja](https://ninja-build.org) by adding the tag "`-G Ninja`" to your cmake command. Note: Mac users will have to install Ninja with [Homebrew](https://brew.sh). 
 
 ### Seg3D 2.4 And Newer
 
